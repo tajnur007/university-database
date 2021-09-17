@@ -141,3 +141,15 @@ INSERT ALL
     INTO teaches VALUES ('101004', 'CSE2236', '1906', 'Winter', 2018)    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Takes table ***/
+INSERT ALL
+    INTO takes VALUES ('190101', 'CSE2238', '1904', 'Winter', 2018, 4.00)
+    INTO takes VALUES ('190102', 'CSE2232', '1901', 'Summer', 2019, 3.50)
+    INTO takes VALUES ('190201', 'EEE1233', '1902', 'Summer', 2019, 3.75)
+    INTO takes VALUES ('190501', 'CSE2238', '1904', 'Winter', 2018, 3.25)
+    INTO takes VALUES ('190103', 'CSE2236', '1906', 'Winter', 2018, 3.50)
+    INTO takes VALUES ('190104', 'CSE22P9', '1905', 'Summer', 2019, 3.25)
+    INTO takes VALUES ('190301', 'PHY1132', '1903', 'Winter', 2018, 4.00)    
+    SELECT * FROM dual;
+
