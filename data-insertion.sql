@@ -107,3 +107,15 @@ INSERT ALL
     INTO student VALUES ('190401', 'Mahid Alam', 'CE', 0.0)    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Course table ***/
+INSERT ALL
+    INTO course VALUES ('CSE2232', 'Microprocessors and Microcontrollers', 'CSE', 3.0)
+    INTO course VALUES ('CSE2236', 'Computer Algorithms', 'CSE', 3.0)
+    INTO course VALUES ('CSE2238', 'Database Management System', 'CSE', 3.0)
+    INTO course VALUES ('CSE22P9', 'Database Management System Lab', 'CSE', 1.5)
+    INTO course VALUES ('CHE2122', 'Chemistry', 'Chemistry', 2.0)
+    INTO course VALUES ('PHY1132', 'Wave, Optics and Thermodynamics', 'Physics', 3.0)
+    INTO course VALUES ('EEE1233', 'Electronic Device and Circuits', 'EEE', 3.0)    
+    SELECT * FROM dual;
+
