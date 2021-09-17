@@ -1,0 +1,11 @@
+DROP TABLE prereq;
+DROP TABLE time_slot;
+DROP TABLE advisor;
+DROP TABLE takes;
+DROP TABLE student;
+DROP TABLE teaches;
+DROP TABLE section;
+DROP TABLE instructor;
+DROP TABLE course;
+DROP TABLE department;
+DROP TABLE classroom;
