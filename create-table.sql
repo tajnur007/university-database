@@ -90,3 +90,14 @@ CREATE TABLE teaches(
     FOREIGN KEY(course_id, sec_id, semester, year) REFERENCES section
 );
 
+
+/*** DDL create Student table ***/
+CREATE TABLE student(
+    id VARCHAR2(10) NOT NULL,
+    name VARCHAR2(30) NOT NULL,
+    dept_name VARCHAR2(10) NOT NULL,
+    tot_cred NUMBER(5,2) CHECK(tot_cred>=0),
+    PRIMARY KEY(id),
+    FOREIGN KEY(dept_name) REFERENCES department
+);
+
