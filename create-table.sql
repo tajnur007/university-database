@@ -116,3 +116,13 @@ CREATE TABLE takes(
 );
 
 
+/*** DDL create Advisor table ***/
+CREATE TABLE advisor(
+    s_id VARCHAR2(10),
+    i_id VARCHAR2(10),
+    PRIMARY KEY(s_id, i_id),
+    FOREIGN KEY(s_id) REFERENCES student,
+    FOREIGN KEY(i_id) REFERENCES instructor
+);
+
+
