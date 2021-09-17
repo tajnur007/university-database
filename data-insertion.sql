@@ -64,3 +64,15 @@ INSERT ALL
     INTO time_slot VALUES ('102', 'Thursday', '10:10', '11:10')
     INTO time_slot VALUES ('103', 'Thursday', '11:20', '12:20')            
     SELECT * FROM dual;
+
+
+/*** DDL for inserting data into Department table ***/
+INSERT ALL
+    INTO department VALUES ('CSE', 'Watson', 8355210)
+    INTO department VALUES ('EEE', 'Packard', 2524360)
+    INTO department VALUES ('IPE', 'Taylor', 2296480)
+    INTO department VALUES ('CE', 'Watson', 2872310)
+    INTO department VALUES ('ME', 'Packard', 3264870)
+    INTO department VALUES ('Physics', 'Watson', 1698210)
+    INTO department VALUES ('Chemistry', 'Taylor', 1540320)    
+    SELECT * FROM dual;
