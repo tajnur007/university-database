@@ -1,0 +1,33 @@
+/////////////////////////////////////////////////////////////////////
+                        University Database
+/////////////////////////////////////////////////////////////////////
+
+>>>Task 1:
+
+Using Oracle, design and create a university database. To create your database you may use the information given below:
+
+    > classroom ( building, room number, capacity)
+    > department (dept_name, building, budget)
+    > course (course id, title, dept_name, credits)
+    > instructor (ID, name, dept_name, salary)
+    > section (course_id, sec_id, semester, year, building, room_number, time_slot_id)
+    > teaches (ID, course_id, sec_id, semester, year)
+    > student (ID, name, dept_name, tot_cred)
+    > takes (ID, course_id, sec_id, semester, year, grade)
+    > advisor (s_ID, i_ID)
+    > time_slot (time_slot_id, day, start_time, end_time)
+    > prereq(course_id, prereq_id)
+
+
+>>>Task 2:
+
+Insert some data in your database. You should insert enough data so that the following queries return valid information. That is, any of the query result does not return an empty set.
+
+List of Queries:
+    > Find all teachers who work in the department of CSE. 
+    > Find all students who is from the district of Gazipur. 
+    > Find the teachers in CSE department who earn more than 60,000 Tk. 
+    > Find the students who enrolled in some courses in the winter 2021.
+    > Find the teacher who taught "Database Management System" course in the winter 2021. 
+
+
