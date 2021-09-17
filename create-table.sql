@@ -50,3 +50,14 @@ CREATE TABLE course(
     FOREIGN KEY(dept_name) REFERENCES department
 );
 
+
+/*** DDL create Instructor table ***/
+CREATE TABLE instructor(
+    id VARCHAR2(10) NOT NULL,
+    name VARCHAR2(30) NOT NULL,
+    dept_name VARCHAR2(10) NOT NULL,
+    salary NUMBER(8,2) CHECK(salary>20000) NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(dept_name) REFERENCES department
+);
+
