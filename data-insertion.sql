@@ -153,3 +153,16 @@ INSERT ALL
     INTO takes VALUES ('190301', 'PHY1132', '1903', 'Winter', 2018, 4.00)    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Advisor table ***/
+INSERT ALL
+    INTO advisor VALUES ('190101', '101003')
+    INTO advisor VALUES ('190102', '101003')
+    INTO advisor VALUES ('190103', '101001')
+    INTO advisor VALUES ('190104', '101002')
+    INTO advisor VALUES ('190201', '102001')
+    INTO advisor VALUES ('190301', '103001')
+    INTO advisor VALUES ('190401', '104001')
+    INTO advisor VALUES ('190501', '105001')    
+    SELECT * FROM dual;
+
