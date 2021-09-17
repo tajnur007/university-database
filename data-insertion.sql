@@ -119,3 +119,14 @@ INSERT ALL
     INTO course VALUES ('EEE1233', 'Electronic Device and Circuits', 'EEE', 3.0)    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Section table ***/
+INSERT ALL
+    INTO section VALUES ('CSE2232', '1901', 'Summer', 2019, 'Watson', 7001, '101')
+    INTO section VALUES ('EEE1233', '1902', 'Summer', 2019, 'Packard', 4001, '102')
+    INTO section VALUES ('PHY1132', '1903', 'Winter', 2018, 'Watson', 5001, '103')
+    INTO section VALUES ('CSE2238', '1904', 'Winter', 2018, 'Watson', 7002, '104')
+    INTO section VALUES ('CSE22P9', '1905', 'Summer', 2019, 'Watson', 7005, '105')
+    INTO section VALUES ('CSE2236', '1906', 'Winter', 2018, 'Watson', 7003, '106')    
+    SELECT * FROM dual;
+
