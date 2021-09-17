@@ -94,3 +94,16 @@ INSERT ALL
     INTO instructor VALUES ('101004', 'Dr. Md. Jakirul Islam', 'CSE', 48000.00)    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Student table ***/
+INSERT ALL
+    INTO student VALUES ('190101', 'Kazi Tajnur Islam', 'CSE', 0.0)
+    INTO student VALUES ('190102', 'Md. Riyad', 'CSE', 0.0)
+    INTO student VALUES ('190201', 'Ahsan Kabir', 'EEE', 0.0)
+    INTO student VALUES ('190501', 'Md. Nasir Uddin', 'ME', 0.0)
+    INTO student VALUES ('190103', 'Md. Mahbub Islam', 'CSE', 0.0)
+    INTO student VALUES ('190104', 'Md. Shirullah Khan', 'CSE', 0.0)
+    INTO student VALUES ('190301', 'Md. Nazrul Islam', 'IPE', 0.0)
+    INTO student VALUES ('190401', 'Mahid Alam', 'CE', 0.0)    
+    SELECT * FROM dual;
+
