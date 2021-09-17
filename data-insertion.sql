@@ -166,3 +166,10 @@ INSERT ALL
     INTO advisor VALUES ('190501', '105001')    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Prereq table ***/
+INSERT ALL 
+    INTO prereq VALUES ('CSE2238', 'CSE2232')
+    INTO prereq VALUES ('CSE2236', 'EEE1233')    
+    SELECT * FROM dual;
+    
