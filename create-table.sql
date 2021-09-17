@@ -126,3 +126,14 @@ CREATE TABLE advisor(
 );
 
 
+/*** DDL create Prereq table ***/
+CREATE TABLE prereq(
+    course_id VARCHAR2(10) NOT NULL,
+    prereq_id VARCHAR2(10) NOT NULL,
+    PRIMARY KEY(course_id, prereq_id),
+    FOREIGN KEY(course_id) REFERENCES course,
+    FOREIGN KEY(prereq_id) REFERENCES course
+);
+
+
+
