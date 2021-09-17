@@ -61,3 +61,19 @@ CREATE TABLE instructor(
     FOREIGN KEY(dept_name) REFERENCES department
 );
 
+
+/*** DDL create Section table ***/
+CREATE TABLE section(
+    course_id VARCHAR2(10) NOT NULL,
+    sec_id VARCHAR2(10) NOT NULL,
+    semester VARCHAR2(10) CHECK(semester IN 
+		('Fall','Winter','Spring','Summer')) NOT NULL,
+    year NUMBER(4) CHECK(year>1999 AND year<2200) NOT NULL,
+    building VARCHAR2(20),
+    room_number NUMBER(4),
+    time_slot_id VARCHAR2(10),
+    PRIMARY KEY(course_id, sec_id, semester, year),
+    FOREIGN KEY(course_id) REFERENCES course,
+    FOREIGN KEY(building, room_number) REFERENCES classroom
+);
+
