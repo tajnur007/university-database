@@ -101,3 +101,18 @@ CREATE TABLE student(
     FOREIGN KEY(dept_name) REFERENCES department
 );
 
+
+/*** DDL create Takes table ***/
+CREATE TABLE takes(
+    id VARCHAR2(10) NOT NULL,
+    course_id VARCHAR2(10) NOT NULL,
+    sec_id VARCHAR2(10) NOT NULL,
+    semester VARCHAR2(10) NOT NULL,
+    year NUMBER(4) NOT NULL,
+    grade NUMBER(5,2) CHECK(grade>0),
+    PRIMARY KEY(id, course_id, sec_id, semester, year),
+    FOREIGN KEY(id) REFERENCES student,
+    FOREIGN KEY(course_id, sec_id, semester, year) REFERENCES section
+);
+
+
