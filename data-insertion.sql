@@ -130,3 +130,14 @@ INSERT ALL
     INTO section VALUES ('CSE2236', '1906', 'Winter', 2018, 'Watson', 7003, '106')    
     SELECT * FROM dual;
 
+
+/*** DDL for inserting data into Teaches table ***/
+INSERT ALL
+    INTO teaches VALUES ('101001', 'CSE2232', '1901', 'Summer', 2019)
+    INTO teaches VALUES ('102001', 'EEE1233', '1902', 'Summer', 2019)
+    INTO teaches VALUES ('106001', 'PHY1132', '1903', 'Winter', 2018)
+    INTO teaches VALUES ('101003', 'CSE2238', '1904', 'Winter', 2018)
+    INTO teaches VALUES ('101003', 'CSE22P9', '1905', 'Summer', 2019)
+    INTO teaches VALUES ('101004', 'CSE2236', '1906', 'Winter', 2018)    
+    SELECT * FROM dual;
+
