@@ -77,3 +77,16 @@ CREATE TABLE section(
     FOREIGN KEY(building, room_number) REFERENCES classroom
 );
 
+
+/*** DDL create Teaches table ***/
+CREATE TABLE teaches(
+    id VARCHAR2(10) NOT NULL,
+    course_id VARCHAR2(10) NOT NULL,
+    sec_id VARCHAR2(10) NOT NULL,
+    semester VARCHAR2(10) NOT NULL,
+    year NUMBER(4) NOT NULL,
+    PRIMARY KEY(id, course_id, sec_id, semester, year),
+    FOREIGN KEY(id) REFERENCES instructor,
+    FOREIGN KEY(course_id, sec_id, semester, year) REFERENCES section
+);
+
