@@ -30,3 +30,12 @@ CREATE TABLE time_slot(
     PRIMARY KEY(time_slot_id, day, start_time)
 );
 
+
+/*** DDL create Department table ***/
+CREATE TABLE department(
+    dept_name VARCHAR2(10) NOT NULL,
+    building VARCHAR2(20),
+    budget NUMBER(10,2) CHECK(budget>0),
+    PRIMARY KEY(dept_name)
+);
+
