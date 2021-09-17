@@ -39,3 +39,14 @@ CREATE TABLE department(
     PRIMARY KEY(dept_name)
 );
 
+
+/*** DDL create Course table ***/
+CREATE TABLE course(
+    course_id VARCHAR2(10) NOT NULL,
+    title VARCHAR2(40) NOT NULL,
+    dept_name VARCHAR2(10) NOT NULL,
+    credits NUMBER(3,2) CHECK(credits>0) NOT NULL,
+    PRIMARY KEY(course_id),
+    FOREIGN KEY(dept_name) REFERENCES department
+);
+
