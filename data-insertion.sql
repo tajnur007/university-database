@@ -76,3 +76,21 @@ INSERT ALL
     INTO department VALUES ('Physics', 'Watson', 1698210)
     INTO department VALUES ('Chemistry', 'Taylor', 1540320)    
     SELECT * FROM dual;
+
+
+/*** DDL for inserting data into Instructor table ***/
+INSERT ALL
+    INTO instructor VALUES ('101001', 'Dr. Mohammad Abdur Rouf','CSE',150000.00)
+    INTO instructor VALUES ('101002', 'Dr. Mohammod Abul Kashem', 'CSE', 160000.00)
+    INTO instructor VALUES ('102001', 'Dr. Md. Sharafat Hossain', 'EEE', 90000.00)
+    INTO instructor VALUES ('104001', 'Dr. Md. Kamal Hossain', 'CE', 95000.00)
+    INTO instructor VALUES ('105001', 'Dr. Mohammad Zoynal Abedin', 'ME', 95000.00)
+    INTO instructor VALUES ('105002', 'Dr. Mohammad Lutfar Rahman', 'ME', 65000.00)
+    INTO instructor VALUES ('105003', 'Dr. Mohammad Washim Dewan', 'ME', 45000.00)
+    INTO instructor VALUES ('101003', 'Dr. Md. Waliur Rahman Miah', 'CSE', 80000.00)
+    INTO instructor VALUES ('106001', 'Md. Rezaul Karim', 'Physics', 75000.00)
+    INTO instructor VALUES ('107001', 'Dr. Zenia Nasreen', 'Chemistry', 95000.00)
+    INTO instructor VALUES ('103001', 'Dr. Md. Abdul Hannan Miah', 'IPE', 105000.00)
+    INTO instructor VALUES ('101004', 'Dr. Md. Jakirul Islam', 'CSE', 48000.00)    
+    SELECT * FROM dual;
+
