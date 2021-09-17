@@ -44,3 +44,23 @@ INSERT ALL
     INTO classroom VALUES ('Taylor', 4003, 60)
     INTO classroom VALUES ('Taylor', 4004, 60)       
     SELECT * FROM dual;
+
+
+/*** DDL for inserting data into Time_Slot table ***/
+INSERT ALL 
+    INTO time_slot VALUES ('104', 'Sunday', '09:00', '10:00')
+    INTO time_slot VALUES ('105', 'Sunday', '10:10', '11:10')
+    INTO time_slot VALUES ('106', 'Sunday', '11:20', '12:20')    
+    INTO time_slot VALUES ('107', 'Monday', '09:00', '10:00')
+    INTO time_slot VALUES ('108', 'Monday', '10:10', '11:10')
+    INTO time_slot VALUES ('109', 'Monday', '11:20', '12:20')    
+    INTO time_slot VALUES ('110', 'Tuesday', '09:00', '10:00')
+    INTO time_slot VALUES ('111', 'Tuesday', '10:10', '11:10')
+    INTO time_slot VALUES ('112', 'Tuesday', '11:20', '12:20')    
+    INTO time_slot VALUES ('113', 'Wednesday', '09:00', '10:00')
+    INTO time_slot VALUES ('114', 'Wednesday', '10:10', '11:10')
+    INTO time_slot VALUES ('115', 'Wednesday', '11:20', '12:20')    
+    INTO time_slot VALUES ('101', 'Thursday', '09:00', '10:00')
+    INTO time_slot VALUES ('102', 'Thursday', '10:10', '11:10')
+    INTO time_slot VALUES ('103', 'Thursday', '11:20', '12:20')            
+    SELECT * FROM dual;
