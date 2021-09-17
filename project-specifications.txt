@@ -31,3 +31,20 @@ List of Queries:
     > Find the teacher who taught "Database Management System" course in the winter 2021. 
 
 
+>>>Task 3: Designing Triggers
+
+    Trigger-1: Design a trigger that, whenever a tuple is inserted into the takes relation, updates the tuple in the student relation for the student taking the course by adding the number of credits for the course to the student’s total credits.
+
+    Trigger-2 and 3: Design triggers to ensure referential integrity on the time_slot_id attribute of the section relation. It is not sufficient to check referential integrity on inserts alone you also need to consider updates of section, as well as deletes and updates to the referenced table time_slot. Therefore, you should also have to create triggers to handle updates to section and time_slot.
+
+    One trigger should be initiated after any insert on the relation section to ensure that the
+    time_slot_id value being inserted is valid.
+
+    A second trigger should consider the case of deletes to time_slot. This trigger should check
+    that the time_slot_id of the tuple being deleted is either still present in time_slot, or that no tuple in section contains that particular time_slot_id value.
+
+    Trigger-4: Design a trigger, for the action on delete of a student tuple, to check if the student has any entries in the takes relation, and if so, to delete them.
+
+    Trigger-5: Design a trigger so that, if you attempt to insert an instructor into a department whose name does not appear in the department relation, the trigger could insert a tuple into the department relation for that department name before the insertion generates a foreign key violation.
+
+
