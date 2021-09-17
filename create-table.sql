@@ -18,3 +18,15 @@ CREATE TABLE classroom(
     capacity NUMBER(3),
     PRIMARY KEY(building, room_number)
 );
+
+
+/*** DDL create Time_Slot table ***/
+CREATE TABLE time_slot(
+    time_slot_id VARCHAR2(10) NOT NULL,
+    day VARCHAR2(10) CHECK(day IN ('Sunday','Monday',
+		'Tuesday','Wednesday','Thursday')) NOT NULL,
+    start_time VARCHAR2(10) NOT NULL,
+    end_time VARCHAR2(10),
+    PRIMARY KEY(time_slot_id, day, start_time)
+);
+
